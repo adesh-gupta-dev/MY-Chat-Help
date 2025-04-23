@@ -1,0 +1,78 @@
+.chat-container {
+    display: flex;
+    height: calc(100vh - 60px);
+  }
+  .chat-container {
+    display: flex;
+    flex-direction: column; /* Ensures top-down flow */
+    height: calc(100vh - 60px); /* Full height minus header */
+    width: 100%;
+    overflow: hidden; /* Prevent scroll bleed */
+  }
+  
+  /* Optional: If you're using a side panel or chat list */
+  .chat-main {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  }
+  
+  /* For actual message view */
+  .chat-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  @media (max-width: 768px) {
+    .chat-container {
+      height: 100vh;
+    }
+  
+    .chat-main {
+      flex-direction: column;
+    }
+  
+    .chat-content {
+      padding: 12px;
+    }
+  }
+  /* Tablet view (768px and below) */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: 1.3rem;
+    padding: 12px;
+  }
+
+  .App-footer {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .App-main {
+    padding: 10px;
+  }
+}
+
+/* Mobile view (480px and below) */
+@media (max-width: 480px) {
+  .App-header {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+
+  .App-footer {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .App-main {
+    padding: 8px;
+  }
+
+  .App {
+    font-size: 14px;
+  }
+}

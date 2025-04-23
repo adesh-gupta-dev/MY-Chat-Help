@@ -1,0 +1,89 @@
+:root {
+  --background-color: linear-gradient(to right, hsl(204, 70%, 17%), #703670);
+  --background-color-light: #772525;
+  --background-color-dark: #1a1a1a;
+  
+  --text-color: #fff;
+  --input-bg-color: #2d2d2d;
+  --icon-bg-color: #fff;
+  --icon-text-color: #000;
+  --box-shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--background-color);
+  background-repeat:round;
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+header h1 { 
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: var(--text-color);
+}
+/* Tablets and below */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+   
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+/* Phones and small devices */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+}
